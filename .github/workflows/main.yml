@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v1
       with:
         fetch-depth: 0
-    - uses: chrisjsimpson/deploy-wireguard-algo-vpn-action@v2
+    - uses: chrisjsimpson/deploy-wireguard-algo-vpn-action@v1
       with:
         ssh-private-key: ${{ secrets.SSHKEY }}
         public-ip: ${{ secrets.HOST }}
